@@ -44,7 +44,7 @@ const EditTutorial = ({editTutorial , editItem }) => {
                 id='title'
                 className='form-control'
                 placeholder='Enter your title'
-                value={title}
+                value={title || ''}
                 onChange={(e) => {
                   setTitle(e.target.value);
                 }}
@@ -60,7 +60,7 @@ const EditTutorial = ({editTutorial , editItem }) => {
                 id='des'
                 className='form-control'
                 placeholder='Enter your Description'
-                value={desc}
+                value={desc || ''}
                 onChange={(e) => {
                   setDesc(e.target.value);
                 }}
